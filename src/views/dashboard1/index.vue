@@ -110,8 +110,8 @@ function showData() {
         </div>
         <div class="right">
           <div class="card-1">
-            <div class="title">DataStatic</div>
-            <!--            <TChart :option="rightChart1.option"/>-->
+            <div class="title">Power consumption statistics</div>
+            <TChart :option="rightChart1.option" />
           </div>
           <div class="card-2">
             <div class="title">DataStatic</div>
