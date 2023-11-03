@@ -22,6 +22,11 @@ export default function () {
       .get(`http://35.178.189.142:8080/power-consumption?date=${date}`)
       .then(({ data }) => {
         option.value = {
+          title: {
+            text: date,
+            left: "center",
+            top: "5%",
+          },
           tooltip: {
             trigger: "axis",
             axisPointer: {
@@ -35,6 +40,7 @@ export default function () {
             type: "value",
           },
           grid: {
+            top: "20%",
             left: "12%",
           },
           series: [],
